@@ -7,7 +7,6 @@ import AddPerson from "./AddPerson";
 
 class App extends Component {
   state = {
-
   }
   render() {
     return (
