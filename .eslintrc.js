@@ -1,17 +1,32 @@
-{
+module.exports = {
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "settings": {
+        "ecmascript": 6,
+        "jsx": true
+    },
     "extends": [
-      "wesbos"
+        "airbnb",
+        "wesbos"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
     ],
     "rules": {
-      "no-console": 2,
-      "prettier/prettier": [
-        "error",
-        {
-          "trailingComma": "es5",
-          "singleQuote": true,
-          "printWidth": 120,
-          "tabWidth": 8,
-        }
-      ]
+        "react/jsx-filename-extension": 0,
     }
-  }
+};

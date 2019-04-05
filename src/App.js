@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import AddPerson from "./AddPerson";
-
-
-
+import AddPerson from './AddPerson';
 
 class App extends Component {
-  state = {
-  }
+  state = {};
+
   render() {
     return (
       <div className="App">
